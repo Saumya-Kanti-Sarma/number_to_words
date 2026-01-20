@@ -2,4 +2,6 @@
 __pycache__
 dist
 test.py
-number_to_words.egg-info
+int2word.egg-info
+.pypirc
+build

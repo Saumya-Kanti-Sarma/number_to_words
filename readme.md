@@ -1,16 +1,16 @@
-# 📘 number_to_words
+# 📘 int2word
 
 Convert integers into readable English words – simple, fast, and dependency-free.
 
-[![PyPI version](https://img.shields.io/pypi/v/number_to_words.svg)](https://pypi.org/project/number_to_words/)
-[![Python versions](https://img.shields.io/pypi/pyversions/number_to_words.svg)](https://pypi.org/project/number_to_words/)
+[![PyPI version](https://img.shields.io/pypi/v/int2word.svg)](https://pypi.org/project/int2word/)
+[![Python versions](https://img.shields.io/pypi/pyversions/int2word.svg)](https://pypi.org/project/int2word/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
 ## Overview
 
-**number_to_words** is a lightweight Python package that converts numbers into English words.
+**int2word** is a lightweight Python package that converts numbers into English words.
 It supports values from **0** up to **billions**, formatted just like humans speak.
 
 ✔ No dependencies
@@ -25,7 +25,7 @@ It supports values from **0** up to **billions**, formatted just like humans spe
 Install using pip:
 
 ```bash
-pip install number_to_words
+pip install int2word
 ```
 
 ---
@@ -35,72 +35,11 @@ pip install number_to_words
 ### Basic example
 
 ```python
-import number_to_words as nw
+from int2word import generate_word
 
-print(nw.num(45))        # forty five
-print(nw.num(2024))      # two thousand twenty four
-print(nw.num(987654321)) # nine hundred eighty seven million six hundred fifty four thousand three hundred twenty one
-```
+print(generate_word(1223))
 
-### Importing the function directly
-
-```python
-from number_to_words import num
-
-print(num(123))  # one hundred twenty three
-```
-
----
-
-## Supported Ranges
-
-| Range                 | Example Output                    |
-| --------------------- | --------------------------------- |
-| 0–13                  | zero → thirteen                   |
-| 14–19                 | fourteen → nineteen               |
-| 20–99                 | twenty one, ninety nine           |
-| 100–999               | one hundred fifty two             |
-| 1,000–999,999         | twelve thousand three hundred ten |
-| 1,000,000–999,999,999 | ninety eight million ...          |
-| 1,000,000,000+        | up to billions                    |
-
----
-
-## Project Structure
-
-```
-number_to_words/
-    __init__.py
-    main.py
-    ds.py
-    tens.py
-    hundreds.py
-    thousands.py
-    millions.py
-    billions.py
-```
-
-Each module handles one specific number range, making the code easy to maintain and extend.
-
----
-
-## API Reference
-
-### `num(x: int) -> str`
-
-Convert any integer to its English representation.
-
-**Example:**
-
-```python
-from number_to_words import num
-num(1200305)
-```
-
-Output:
-
-```
-one million two hundred thousand three hundred five
+# output: one thousand two hundred twenty three
 ```
 
 ---
@@ -109,7 +48,7 @@ one million two hundred thousand three hundred five
 
 Contributions, issues, and pull requests are welcome.
 
-If you find this package useful, please consider giving the repository a ⭐ on  [GitHub!](https://github.com/Saumya-Kanti-Sarma/number_to_words)
+If you find this package useful, please consider giving the repository a ⭐ on  [GitHub!](https://github.com/Saumya-Kanti-Sarma/int2word)
 
 ---
 
