@@ -2,4 +2,4 @@
 __pycache__
 dist
 test.py
-number_in_words.egg-info
+number_to_words.egg-info
